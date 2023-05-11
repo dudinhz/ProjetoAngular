@@ -1,22 +1,56 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col  size= "6" class="left__side">
+        </ion-col>
+
+        <ion-col size= "6" class= "right__side">
+          <ion-label size="6" class="label">
+            <h1>Criar Conta</h1>
+          </ion-label>
+
+    
+          <ion-list class="list">
+            
+            <ion-item>
+              <ion-label>Nome</ion-label>
+              <ion-input placeholder=""></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>E-mail</ion-label>
+              <ion-input placeholder=""></ion-input>
+            </ion-item>
+        
+        
+            <ion-item>
+              <ion-label>Senha</ion-label>
+              <ion-input placeholder="" type="password"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Confirmar senha</ion-label>
+              <ion-input placeholder="" type="password"></ion-input>
+            </ion-item>
+</ion-list>        
+<div class="centro">
+  <ion-button class="botao">Criar Conta</ion-button><br>
+
+  <ion-col>
+    <ion-label class="login">
+      <p>Login com</p>
+    </ion-label>
+  
+  </ion-col>
+  <ion-button class="facebook">Facebook</ion-button><br>
+  <ion-button class="twitter">Twitter</ion-button><br>
+  <ion-button class="google">Google</ion-button><br>
+</div>
+
+
+      </ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-content>
